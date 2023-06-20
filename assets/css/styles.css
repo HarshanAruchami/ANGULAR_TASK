@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= 
+    HEADER
+   =================*/
+header {
+    background-color: black;
+}
+
+header h3 {
+    padding: .6em 0 .4em 0;
+}
+
+#heading {
+    font-family: monospace;
+}
+
+header h3,
+i {
+    color: white;
+}
+
+b {
+    color: darkgray;
+
+}
+
+/* =================
+    NAVBAR
+   ================= */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  
+}
+
+header nav ul li {
+    padding-right: 2em;
+}
+
+/* toggle */
+#toggle{
+    
+    color: aliceblue;
+    background-color: rgb(255, 255, 255);
+}
