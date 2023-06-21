@@ -1,6 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;
+.ribbon{
+    background-image: url(/assets/images/Enterprises-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 a {
@@ -70,52 +74,4 @@ header nav ul li {
 
     color: aliceblue;
     background-color: rgb(255, 255, 255);
-}
-
-/* ===============
-    BANNER
-   ===============*/
-
-.banner {
-    background-image: url(/assets/images/Banner.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 190px 0 450px;
-    position: relative;
-    z-index: 0;
-}
-
-#img_content{
-    border: solid white .1em;
-}
-#img_content h1{
-    font-size: 2.5rem;
-}
-.banner #box{
-    position: absolute;
-    width: 100%;
-    top: 26em;  
-    z-index: 1;
-}
-#arrow-link{
-    z-index: 2;
-    position: absolute;
-    top: 10em;
-
-}
-/* ================
-    TYPOGRAPHY  
-   ================*/
-p a{
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-p a:hover{
-    color: black!important;
-}
-
-.banner h2{
-    color: #978f8f;
 }
