@@ -104,7 +104,7 @@ header nav ul li {
 #arrow-link {
     z-index: 2;
     position: absolute;
-    top: 10em;
+    top: 8.5em;
 
 }
 
@@ -156,7 +156,7 @@ i:hover {
 
 #card_row {
     display: fex;
-    flex-direction: colmn;
+  
 }
 
 #bg-black {
@@ -168,7 +168,8 @@ i:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 480px 0 490px;
+    padding: 480px 0 185px;
+    transition: transform .8s;
 
 }
 
@@ -177,8 +178,16 @@ i:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 480px 0 490px;
+    padding: 480px 0 185px;
+    transition: transform .8s;
 
+}
+
+/* hover zoom effect */
+#card_1:hover,
+#card_2:hover {
+    transform: scale(1.05);
+    overflow: hidden !important;
 }
 
 /* ===================
@@ -232,21 +241,28 @@ footer {
     }
 
     #card_1 {
-        background-image: url(/assets/images/main_card-1.jpg);
+        background-image: url(/assets/images/mob_card1.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 670px 0 580px;
+        padding: 0px 0 780px;
+        transition: transform .8s;
 
     }
 
     #card_2 {
-        background-image: url(/assets/images/main_card-2.jpg);
+        background-image: url(/assets/images/mob_card2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 670px 0 580px;
+        padding: 0px 0 780px;
+        transition: transform .8s;
+    }
 
+    /* hover zoom effect */
+    #card_1:hover,
+    #card_2:hover {
+        transform: scale(1);
     }
 
     footer .row div:nth-child(5),
