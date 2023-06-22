@@ -85,37 +85,120 @@ header nav ul li {
     z-index: 0;
 }
 
-#img_content{
+#img_content {
     border: solid white .1em;
 }
-#img_content h1{
+
+#img_content h1 {
     font-size: 2.5rem;
 }
-.banner #box{
+
+.banner #box {
     position: absolute;
-    width: 100%;
-    top: 26em;  
+    width: 101.1%;
+    top: 26em;
     z-index: 1;
 }
-#arrow-link{
+
+#arrow-link {
     z-index: 2;
     position: absolute;
     top: 10em;
 
 }
+
+.banner i {
+    font-size: medium;
+    position: relative;
+    animation: mymove 1s infinite;
+    color: white;
+}
+
+/* Animation for arrow */
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 5px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
 /* ================
     TYPOGRAPHY  
    ================*/
-p a{
+p a {
     color: white;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 500;
 }
 
-p a:hover{
-    color: black!important;
+.banner a:hover,
+i:hover {
+    color: black !important;
 }
 
-.banner h2{
+.banner h2 {
     color: #978f8f;
+    font-family: sans-serif;
+    letter-spacing: normal;
+}
+
+/* ================
+    CARDS
+   ================ */
+#card_row {
+    display: fex;
+    flex-direction: colmn;
+}
+
+/* #card_1 {
+    background-image: url(/assets/images/main_card-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 480px 0 490px;
+
+} */
+
+#card_2 {
+    background-image: url(/assets/images/main_card-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 480px 0 490px;
+
+}
+
+/* ===================
+    MEDIA 425px
+   =================== */
+   /* @media (max-width:) */
+#card_1 {
+    background-image: url(/assets/images/main_card-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 480px 0 490px;
+
+}
+
+
+
+/* ===================
+    MEDIA 425px
+   =================== */
+
+   @media (max-width: 425px) {
+    .banner {
+        background-image: url(/assets/images/mob_banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
