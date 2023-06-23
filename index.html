@@ -24,11 +24,29 @@
             </div>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
+                    <!-- <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-lable="Toggle navigation" id="toggle-size">
                         <i class="fa-solid fa-bars"></i>
-                    </button>
+                    </button> -->
+                    <!-- sidepanel -->
+
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <button class="openbtn d-none d-md-block d-lg-none" onclick="openNav()">&#9776;</button>
+                  
+                    <!-- ============== -->
 
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav">
@@ -52,7 +70,19 @@
             </nav>
         </header>
     </section>
+    <!-- sidepanel -->
+    <!-- <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 
+    <button class="openbtn" onclick="openNav()">&#9776;Menu</button>
+    <h2>Collapsed Sidepanel</h2>
+    <p>Content...</p> -->
+    <!-- ============== -->
     <!-- BANNER -->
     <section class="banner">
         <div class="row justify-content-center" id="box">
@@ -150,7 +180,7 @@
 <!-- js bootstrap file linking -->
 <script src="./assets/js/bootstrap.bundle.js"></script>
 <!-- JS file linking -->
-<script src="./assets/js/"></script>
+<script src="./assets/js/index.js"></script>
 <!-- Fontawsome JS link -->
 <script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
 
