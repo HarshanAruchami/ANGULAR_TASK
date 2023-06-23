@@ -41,6 +41,11 @@ b:hover {
 /* =================
     NAVBAR
    ================= */
+
+.navbar-nav {
+    padding-left: 12em !important;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -60,10 +65,6 @@ nav ul {
 
 header nav ul li {
     padding-right: 2em;
-}
-
-#set-cart {
-    padding: 0 0 0 0em;
 }
 
 /* toggle */
@@ -108,7 +109,8 @@ header nav ul li {
 
 }
 
-.banner i {
+.banner i,
+.big_cards i {
     font-size: medium;
     position: relative;
     animation: mymove 1s infinite;
@@ -139,13 +141,15 @@ p a {
     font-weight: 500;
 }
 
+.big_cards a:hover,
 .banner a:hover,
-i:hover {
+.big_cards i:hover,
+.banner i:hover {
     color: black !important;
 }
 
-.banner h2 {
-    color: #978f8f;
+h2 {
+    color: #978f8f !important;
     font-family: sans-serif;
     letter-spacing: normal;
 }
@@ -156,7 +160,7 @@ i:hover {
 
 #card_row {
     display: fex;
-  
+
 }
 
 #bg-black {
@@ -169,9 +173,18 @@ i:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding: 480px 0 185px;
-    transition: transform .8s;
+    z-index: 0;
+    position: relative;
 
 }
+
+#card-content {
+    margin: -14.5em 0 0 10.5em;
+    position: absolute;
+    z-index: 1;
+}
+
+
 
 #card_2 {
     background-image: url(/assets/images/main_card-2.jpg);
@@ -179,16 +192,32 @@ i:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding: 480px 0 185px;
+
+
+}
+
+/* ===================
+    hover zoom effect
+   =================== */
+#container {
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#container #card_1,
+#container #card_2 {
+    display: block;
     transition: transform .8s;
-
 }
 
-/* hover zoom effect */
-#card_1:hover,
-#card_2:hover {
+#container:hover #card_1,
+#container:hover #card_2 {
     transform: scale(1.05);
-    overflow: hidden !important;
+    transform-origin: 50% 50%;
 }
+
+
 
 /* ===================
     FOOTER
@@ -209,11 +238,27 @@ footer {
     padding-bottom: .8em;
 }
 
+/* ===================
+    MEDIA 2560px
+   =================== */
+@media (max-width:2560px) {
+
+    #card-content {
+        margin: -14.5em 0em 0 1em;
+        position: absolute;
+        z-index: 1;
+        width: 93%;
+    }
+
+
+}
+
 
 /* ===================
     MEDIA 991px
    =================== */
 @media (max-width:991px) {
+
     footer .row div:nth-last-child(3) {
         border-right: 0;
     }
@@ -226,6 +271,13 @@ footer {
     footer img {
         width: 5%;
     }
+
+    #card-content {
+        margin: -14.5em .9em 0 .8em;
+        position: absolute;
+        z-index: 1;
+        width: 90%;
+    }
 }
 
 /* ===================
@@ -233,6 +285,7 @@ footer {
    =================== */
 
 @media (max-width: 575px) {
+    
     .banner {
         background-image: url(/assets/images/mob_banner.jpg);
         background-position: center;
@@ -246,7 +299,6 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
         padding: 0px 0 780px;
-        transition: transform .8s;
 
     }
 
@@ -256,12 +308,12 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
         padding: 0px 0 780px;
-        transition: transform .8s;
+
     }
 
     /* hover zoom effect */
-    #card_1:hover,
-    #card_2:hover {
+    #container:hover #card_1,
+    #container:hover #card_2 {
         transform: scale(1);
     }
 
@@ -285,4 +337,10 @@ footer {
     #social {
         padding-top: 1em;
     }
+
+    #card-content {
+        width: 92%;
+    }
+
+
 }
