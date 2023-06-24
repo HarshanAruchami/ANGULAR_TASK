@@ -11,7 +11,7 @@ a {
 /* =================
     SIDEPANEL
    ================= */
-/* The sidepanel menu */
+/* The sidepanel left menu */
 .sidepanel {
     height: 780px;
     /* Specify a height */
@@ -23,40 +23,82 @@ a {
     /* Stay on top */
     top: 0;
     left: 0;
+    /* Toggle from left */
     background-color: #ffffff;
-    box-shadow: #ffffff;
-    /* Black*/
+    box-shadow: 60px 5px 179px 8px rgb(255, 255, 255);
+    /* White*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    padding-top: 60px;
+    padding-top: 24px;
     /* Place content 60px from the top */
-    transition: 0.5s;
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+.sidepanelR {
+    height: 780px;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    /* Toggle from right */
+    background-color: #ffffff;
+    box-shadow: 0px 5px 279px 9px rgb(255, 255, 255);
+    /* White*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 50px;
+    /* Place content 60px from the top */
+    transition: 0.2s;
     /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
-.sidepanel a {
-    padding: 8px 8px 8px 32px;
+.sidepanel p,
+.sidepanelR p {
+    margin-bottom: .1em;
+    border-bottom: solid rgb(238, 238, 238) .5px;
+}
+
+.sidepanel a,
+.sidepanelR a {
+    padding: 8px 8px 8px 20px;
     text-decoration: none;
-    font-size: 25px;
-    color: #f31313;
+    font-size: 17px;
+    color: #000000 !important;
     display: block;
     transition: 0.3s;
 }
 
+.sidepanel a:nth-child(2) {
+    color: #978f8f !important;
+    font-size: small;
+}
+
+.sidepanelR p:hover {
+    background-color: #e2e2e2;
+}
+
 /* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-    color: #f1f1f1;
+.sidepanel a:hover,
+.sidepanelR a:hover {
+    color: #000000 !important;
 }
 
 /* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
+.sidepanel .closebtn,
+.sidepanelR .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    color: #111;
+    color: #000000 !important;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -69,7 +111,25 @@ a {
     border: none;
 }
 
-/* ================= 
+/* Settings button */
+.openbtnset {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.social1 {
+    display: flex;
+}
+
+.social1 a {
+    padding: 0%;
+}
+
+/* =================
     HEADER
    =================*/
 header {
@@ -126,6 +186,10 @@ nav ul {
 
 header nav ul li {
     padding-right: 2em;
+}
+
+.setting {
+    margin-left: 0em;
 }
 
 /* toggle */
@@ -194,7 +258,7 @@ header nav ul li {
 }
 
 /* ================
-    TYPOGRAPHY  
+    TYPOGRAPHY
    ================*/
 p a {
     color: white;
@@ -311,6 +375,10 @@ footer {
         width: 93%;
     }
 
+    .openbtn {
+        display: none;
+    }
+
 
 }
 
@@ -338,6 +406,15 @@ footer {
         position: absolute;
         z-index: 1;
         width: 90%;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .sidepanel {
+        box-shadow: 80px 5px 999px 0px rgb(255, 255, 255);
+
     }
 }
 
@@ -403,5 +480,7 @@ footer {
         width: 92%;
     }
 
-
+    .openbtn {
+        display: block;
+    }
 }
