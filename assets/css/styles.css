@@ -35,28 +35,6 @@ a {
     /* 0.5 second transition effect to slide in the sidepanel */
 }
 
-.sidepanelR {
-    height: 780px;
-    /* Specify a height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    right: 0;
-    /* Toggle from right */
-    background-color: #ffffff;
-    box-shadow: 0px 5px 279px 9px rgb(255, 255, 255);
-    /* White*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 50px;
-    /* Place content 60px from the top */
-    transition: 0.2s;
-    /* 0.5 second transition effect to slide in the sidepanel */
-}
 
 /* The sidepanel links */
 .sidepanel p,
@@ -82,12 +60,6 @@ a {
 
 .sidepanelR p:hover {
     background-color: #e2e2e2;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover,
-.sidepanelR a:hover {
-    color: #000000 !important;
 }
 
 /* Position and style the close button (top right corner) */
@@ -128,6 +100,8 @@ a {
 .social1 a {
     padding: 0%;
 }
+
+
 
 /* =================
     HEADER
@@ -379,6 +353,27 @@ footer {
         display: none;
     }
 
+    .sidepanelR {
+        height: 780px;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #000c4000, #190d42);
+        /* White*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 120px;
+        /* Place content 60px from the top */
+        transition: 0.2s;
+        /* 0.5 second transition effect to slide in the sidepanel */
+    }
 
 }
 
@@ -416,6 +411,7 @@ footer {
         box-shadow: 80px 5px 999px 0px rgb(255, 255, 255);
 
     }
+
 }
 
 /* ===================
@@ -483,4 +479,32 @@ footer {
     .openbtn {
         display: block;
     }
+
+    .sidepanelR {
+        height: 780px;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        /* Toggle from right */
+        background-color: #ffffff;
+        box-shadow: 0px 5px 279px 9px rgb(255, 255, 255);
+        background: linear-gradient(to right, #ffffff, #ffffff);
+        /* White*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 50px;
+        /* Place content 60px from the top */
+        transition: 0.2s;
+
+        /* 0.5 second transition effect to slide in the sidepanel */
+    }
+
+
+
 }
