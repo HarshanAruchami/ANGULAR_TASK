@@ -15,7 +15,7 @@ a {
 .sidepanel {
     height: 780px;
     /* Specify a height */
-    width: 0;
+    width:0;
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
@@ -58,9 +58,6 @@ a {
     font-size: small;
 }
 
-.sidepanelR p:hover {
-    background-color: #e2e2e2;
-}
 
 /* Position and style the close button (top right corner) */
 .sidepanel .closebtn,
@@ -138,7 +135,12 @@ b:hover {
    ================= */
 
 .navbar-nav {
-    padding-left: 12em !important;
+    padding-left: 5em !important;
+}
+
+/* cart-icon */
+#set-cart i:last-child {
+    margin-top: 7px;
 }
 
 nav ul {
@@ -178,7 +180,7 @@ header nav ul li {
    ===============*/
 
 .banner {
-    background-image: url(/assets/images/Banner.jpg);
+    background-image: url(../images/Banner.jpg);
     background-position: center;
     background-size: cover;
     padding: 190px 0 450px;
@@ -267,7 +269,7 @@ h2 {
 }
 
 #card_1 {
-    background-image: url(/assets/images/main_card-1.jpg);
+    background-image: url(../images/main_card-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -286,7 +288,7 @@ h2 {
 
 
 #card_2 {
-    background-image: url(/assets/images/main_card-2.jpg);
+    background-image: url(../images/main_card-2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -362,17 +364,45 @@ footer {
         /* Stay in place */
         z-index: 1;
         /* Stay on top */
-        top: 0;
+        top: 50;
         right: 0;
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #000c4000, #190d42);
+        background: linear-gradient(to right, #000c4000, #130e2c);
         /* White*/
         overflow-x: hidden;
         /* Disable horizontal scroll */
-        padding-top: 120px;
+        padding-top: 80px;
         /* Place content 60px from the top */
         transition: 0.2s;
         /* 0.5 second transition effect to slide in the sidepanel */
+    }
+
+    .closebtn p {
+        color: #ffffff !important;
+    }
+
+    .closebtn p:hover {
+        color: #000000 !important;
+    }
+
+    .sidepanelR p {
+        margin-bottom: 0;
+        border-bottom: 0;
+        font-weight: bold;
+        color: #978f8f !important;
+    }
+
+    .sidepanelR p:hover {
+        color: white !important;
+        background-color: transparent;
+    }
+
+    .md-btn {
+        display: none;
+    }
+
+    .sidepanelR a {
+        text-align: right;
     }
 
 }
@@ -412,6 +442,69 @@ footer {
 
     }
 
+    .sidepanelR {
+        height: 780px;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        /* Toggle from right */
+        background-color: #ffffff;
+        box-shadow: 0px 5px 279px 9px rgb(255, 255, 255);
+        background: linear-gradient(to right, #ffffff, #ffffff);
+        /* White*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 30px;
+        /* Place content 60px from the top */
+        transition: 0.2s;
+
+        /* 0.5 second transition effect to slide in the sidepanel */
+    }
+
+    .sidepanelR p:hover {
+        background-color: #e2e2e2;
+        color: #000000 !important;
+    }
+
+    .sidepanelR p {
+        margin-bottom: .1em;
+        color: #000000 !important;
+        border-bottom: solid rgb(238, 238, 238) .5px;
+        font-weight: normal;
+    }
+
+    .sidepanelR .closebtn p {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: #000000 !important;
+        background-color: transparent;
+        font-weight: normal !important;
+    }
+
+    .lg-btn {
+        display: none;
+    }
+
+    .md-btn {
+        display: block;
+    }
+
+    .sidepanelR span {
+        display: none;
+    }
+
+    .sidepanelR a {
+        text-align: left;
+    }
 }
 
 /* ===================
@@ -421,14 +514,14 @@ footer {
 @media (max-width: 575px) {
 
     .banner {
-        background-image: url(/assets/images/mob_banner.jpg);
+        background-image: url(../images/mob_banner.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     #card_1 {
-        background-image: url(/assets/images/mob_card1.jpg);
+        background-image: url(../images/mob_card1.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -437,7 +530,7 @@ footer {
     }
 
     #card_2 {
-        background-image: url(/assets/images/mob_card2.jpg);
+        background-image: url(../images/mob_card2.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -505,6 +598,13 @@ footer {
         /* 0.5 second transition effect to slide in the sidepanel */
     }
 
+    .lg-btn {
+        display: none;
+    }
+
+    .sidepanelR span {
+        display: none;
+    }
 
 
 }

@@ -10,7 +10,9 @@
     <!-- css bootstrap file linking -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- Fontawsome JS link -->
-    <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
+    <!-- tab icon -->
+    <link rel="icon" href="./assets/images/logo.webp">
 
 </head>
 
@@ -79,9 +81,6 @@
                         </div>
                     </div>
                     <button class="openbtn p-0" onclick="openNav()">&#9776;</button>
-
-                    <!-- ============== -->
-
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li><a href="#" class="nav-link"><b>SCHOOL</b></a></li>
@@ -95,26 +94,29 @@
                     <!-- nav-icons -->
                     <div class="" id="set-cart">
                         <div class="d-flex text-center">
-                            <button class="openbtnset p-0" onclick="openSet()"> <a href="#"><img
-                                        src="./assets/images/setting_icon.png" class="float-right mr-4"
-                                        id="setting_icon" width="13%" alt="settings"></a></button>
+                            <button class="openbtnset p-0 md-btn" onclick="openSet()"><i
+                                    class="fa-solid fa-gear"></i></button>
+                            <button class="openbtnset p-0 lg-btn" id="tog"><i class="fa-solid fa-gear"></i></button>
                             <!-- SIDE PANNEL RIGHT -->
                             <div id="myrightSidepanel" class="sidepanelR text-left">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">&times;</a>
-                                <a href="#">
-                                    <p>Login</p>
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">
+                                    <p>&times;</p>
                                 </a>
                                 <a href="#">
-                                    <p>Register</p>
+                                    <p>Login<span> | <i class="fa-solid fa-right-to-bracket"></i></span></p>
                                 </a>
                                 <a href="#">
-                                    <p>Order Status</p>
+                                    <p>Register<span> | <i class="fa-solid fa-user-plus"></i></span></p>
                                 </a>
                                 <a href="#">
-                                    <p>Contact</p>
+                                    <p>Order Status<span> | <i class="fa-solid fa-box"></i></span></p>
+                                </a>
+                                <a href="#">
+                                    <p>Contact<span> | <i class="fa-solid fa-comments"></i></span></p>
                                 </a>
                             </div>
-                            <a href="#"><i class="fa-solid fa-cart-shopping mt-1" style="font-size:larger;"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping ml-4" id="dog"
+                                    style="font-size:larger;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -187,31 +189,28 @@
     </section>
 
     <!-- FOOTER -->
-    <footer id="bg-black">
-        <div class="container">
-            <div class="text-center" id="social">
-                <a href="#"><img src="./assets/images/FB_icon.png" class="m-2" width="2.9%" alt="Facebook"></a>
-                <a href="#"><img src="./assets/images/IG_icon.png" class="m-2 bg-light rounded-circle" width="2.9%"
-                        alt="Instagram"></a>
-                <a href="#"><img src="./assets/images/LI_icon.png" class="m-2" width="2.9%" alt="Linkedin"></a>
+    <section class="footer">
+        <footer id="bg-black">
+            <div class="container">
+                <div class="text-center" id="social">
+                    <a href="#"><img src="./assets/images/FB_icon.png" class="m-2" width="2.9%" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/images/IG_icon.png" class="m-2 bg-light rounded-circle" width="2.9%"
+                            alt="Instagram"></a>
+                    <a href="#"><img src="./assets/images/LI_icon.png" class="m-2" width="2.9%" alt="Linkedin"></a>
+                </div>
+                <div class="row text-center justify-content-center">
+                    <div class="col-sm-3 col-lg-2 "><a href="#"><b>ABOUT</b></a></div>
+                    <div class="col-sm-3 col-lg-2"><a href="#"><b>CARE</b></a></div>
+                    <div class="col-sm-3 col-lg-2"><a href="#"><b>RETURNS</b></a></div>
+                    <div class="col-sm-3 col-lg-2"><a href="#"><b>PRODUCTION</b></a></div>
+                    <div class="col-sm-3 col-lg-2"><a href="#"><b>TERMS</b></a></div>
+                    <div class="col-sm-3 col-lg-2"><a href="#"><b>GET HELP</b></a></div>
+                </div>
             </div>
-            <div class="row text-center justify-content-center">
-                <div class="col-sm-3 col-lg-2 "><a href="#"><b>ABOUT</b></a></div>
-                <div class="col-sm-3 col-lg-2"><a href="#"><b>CARE</b></a></div>
-                <div class="col-sm-3 col-lg-2"><a href="#"><b>RETURNS</b></a></div>
-                <div class="col-sm-3 col-lg-2"><a href="#"><b>PRODUCTION</b></a></div>
-                <div class="col-sm-3 col-lg-2"><a href="#"><b>TERMS</b></a></div>
-                <div class="col-sm-3 col-lg-2"><a href="#"><b>GET HELP</b></a></div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
 </body>
 
-<!-- jquery cdns -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
 <!-- dropdown bootstrap cdn -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -220,7 +219,9 @@
 <script src="./assets/js/bootstrap.bundle.js"></script>
 <!-- JS file linking -->
 <script src="./assets/js/index.js"></script>
-<!-- Fontawsome JS link -->
-<script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
+<!-- jquery cdns -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 </html>

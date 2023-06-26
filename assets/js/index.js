@@ -12,7 +12,7 @@ function closeNav() {
 // SIDEPANEL JS FOR SETTINGS
 /* Set the width of the sidebar to 250px (show it) */
 function openSet() {
-  document.getElementById("myrightSidepanel").style.width = "280px";
+  document.getElementById("myrightSidepanel").style.width = "230px";
 }
 
 /* Set the width of the sidebar to 0 (hide it) */
