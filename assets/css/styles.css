@@ -15,7 +15,7 @@ a {
 .sidepanel {
     height: 780px;
     /* Specify a height */
-    width:0;
+    width: 0;
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
@@ -115,15 +115,9 @@ header h3 {
     font-family: monospace;
 }
 
-header h3,
-i {
-    color: white;
-}
-
 b {
     color: darkgray;
     font-weight: 500 !important;
-
 }
 
 b:hover {
@@ -207,7 +201,6 @@ header nav ul li {
     z-index: 2;
     position: absolute;
     top: 8.5em;
-
 }
 
 .banner i,
@@ -215,7 +208,6 @@ header nav ul li {
     font-size: medium;
     position: relative;
     animation: mymove 1s infinite;
-    color: white;
 }
 
 /* Animation for arrow */
@@ -237,16 +229,15 @@ header nav ul li {
     TYPOGRAPHY
    ================*/
 p a {
-    color: white;
+    color: white !important;
     font-size: 18px;
     font-weight: 500;
 }
 
 .big_cards a:hover,
-.banner a:hover,
-.big_cards i:hover,
-.banner i:hover {
+.banner a:hover {
     color: black !important;
+
 }
 
 h2 {
@@ -371,10 +362,15 @@ footer {
         /* White*/
         overflow-x: hidden;
         /* Disable horizontal scroll */
-        padding-top: 80px;
+        padding-top: 40px;
         /* Place content 60px from the top */
         transition: 0.2s;
         /* 0.5 second transition effect to slide in the sidepanel */
+    }
+    #myrightSidepanel a p{
+        padding-right: 16px!important;
+        font-size: larger;
+        font-weight: 500;
     }
 
     .closebtn p {

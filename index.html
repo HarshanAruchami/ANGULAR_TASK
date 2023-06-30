@@ -34,7 +34,7 @@
                     <!-- sidepanel -->
 
                     <div id="myleftSidepanel" class="sidepanel">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
                         <a>SHOP FOR</a>
                         <a href="#">
                             <p>SCHOOL</p>
@@ -92,16 +92,16 @@
                     </div>
 
                     <!-- nav-icons -->
-                    <div class="" id="set-cart">
+                    <div id="set-cart">
                         <div class="d-flex text-center">
                             <button class="openbtnset p-0 md-btn" onclick="openSet()"><i
                                     class="fa-solid fa-gear"></i></button>
-                            <button class="openbtnset p-0 lg-btn" id="tog"><i class="fa-solid fa-gear"></i></button>
+                            <button class="openbtnset p-0 lg-btn" id="tog" onmouseenter="openSet()"><i
+                                    class="fa-solid fa-gear"></i></button>
                             <!-- SIDE PANNEL RIGHT -->
-                            <div id="myrightSidepanel" class="sidepanelR text-left">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">
-                                    <p>&times;</p>
-                                </a>
+                            <div id="myrightSidepanel" class="sidepanelR">
+                                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">
+                                </a> -->
                                 <a href="#">
                                     <p>Login<span> | <i class="fa-solid fa-right-to-bracket"></i></span></p>
                                 </a>
@@ -133,7 +133,9 @@
             </div>
             <div class="row justify-content-center" id="arrow-link">
                 <div class="ml-4 text-center">
-                    <p><a href="#">ACECRAFT FOR COLLAGES<i class="fa-sharp fa-solid fa-angle-right"></i></a></p>
+                    <p><a href="#">
+                            ACECRAFT FOR COLLAGES<i class="fa-sharp fa-solid fa-angle-right"></i>
+                        </a></p>
                 </div>
             </div>
         </div>
